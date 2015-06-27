@@ -1,17 +1,61 @@
 package com.uophomework.groupproject;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 
-public class Main extends ActionBarActivity {
+public class Main extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final ImageButton navigateBtn = (ImageButton)findViewById(R.id.navigateBtn);
+        final ImageButton callBtn = (ImageButton)findViewById(R.id.callBtn);
+        final ImageButton emailBtn = (ImageButton)findViewById(R.id.emailBtn);
+        final ImageButton websiteBtn = (ImageButton)findViewById(R.id.websiteBtn);
+
+        navigateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO: Navigation starts here...
+                Toast.makeText(getApplicationContext(), getString(R.string.contactMapBtn_lbl), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        callBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO: Call starts here...
+                Toast.makeText(getApplicationContext(), getString(R.string.contactCallBtn_lbl), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        emailBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO: Email starts here...
+                Toast.makeText(getApplicationContext(), getString(R.string.contactEmailBtn_lbl), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        websiteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO: Website starts here...
+                Toast.makeText(getApplicationContext(), getString(R.string.contactWWWBtn_lbl), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+
     }
 
     @Override
