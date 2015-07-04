@@ -39,20 +39,10 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/contactAddr1"
-        android:id="@+id/contactAddr1"
+        android:id="@+id/contactAddr"
         android:layout_alignTop="@+id/addressIcon"
         android:layout_alignLeft="@+id/contactName"
         android:layout_alignStart="@+id/contactName" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/contactAddr2"
-        android:id="@+id/contactAddr2"
-        android:layout_below="@+id/contactAddr1"
-        android:layout_alignLeft="@+id/contactAddr1"
-        android:layout_alignStart="@+id/contactAddr1" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -72,9 +62,9 @@
         android:text="@string/contactPhone"
         android:id="@+id/contactPhone"
         android:layout_alignTop="@+id/phoneIcon"
-        android:layout_alignLeft="@+id/contactAddr2"
-        android:layout_alignStart="@+id/contactAddr2"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/contactAddr"
+        android:layout_alignStart="@+id/contactAddr" />
 
     <ImageView
         android:layout_width="wrap_content"
