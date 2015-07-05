@@ -17,8 +17,7 @@
 
     <!--Specific-->
     <string name="contactName">University of Phoenix</string>
-    <string name="contactAddr1">1625 W Fountainhead Pkwy</string>
-    <string name="contactAddr2">Tempe, AZ 85282</string>
+    <string name="contactAddr1">1625 W Fountainhead Pkwy Tempe, AZ 85282</string>
     <string name="contactPhone">(602) 557&#8211;2000</string>
     <string name="contactEmail">contact@phoenix.edu</string>
     <string name="contactWebsite">http://www.phoenix.edu</string>
