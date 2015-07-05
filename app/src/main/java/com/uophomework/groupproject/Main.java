@@ -47,22 +47,19 @@ public class Main extends Activity {
         navigateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO: Insert Location Services and Navigation
-                Toast.makeText(getApplicationContext(), getString(R.string.contactMapBtn_lbl), Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(android.content.Intent.ACTION_VIEW,Uri.parse("http://maps.google.com/maps?daddr=33.4020704,-111.9660244")));
             }
         });
         addressIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO: Insert Location Services and Navigation
-                Toast.makeText(getApplicationContext(), getString(R.string.contactMapBtn_lbl), Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=33.4020704,-111.9660244")));
             }
         });
         contactAddr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO: Insert Location Services and Navigation
-                Toast.makeText(getApplicationContext(), getString(R.string.contactMapBtn_lbl), Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=33.4020704,-111.9660244")));
             }
         });
 
